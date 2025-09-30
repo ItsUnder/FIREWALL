@@ -3,54 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
   <title>FIREWALL</title>
   <style>
    
   </style>
 </head>
 <body>
+
+    <button id="menuToggle">☰</button>
+<nav class="sidebar" id="sidebar">
+  <ul>
+    <li id="manualOption">Manual</li>
+    <li id="complexOption"></li>
+  </ul>
+</nav>
     <button id="clearBtn">Limpar Tudo</button>
   <header>
     <img class="logoFirewall" src="./images/Logo Firewall.png">
   </header>
-  <div class="container">
+  <<div class="container">
     <div class="category">
         <div class="categoryHeader">
          <h2 class="categoryTitle">Métodos de Ataque</h2> <img class="headerButtons" src="./images/Header Buttons.png">
         </div>
 <div class="item">
     <label>• Exploit de Zero-Day</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoA">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoA">
+      
+    </div>
 </div>
 <div class="item">
     <label>• Men-In-The-Middle</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoB">
+     <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoA">
+    </div>
 </div>
 <div class="item">
     <label>• SQL Injection</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoC">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoC">
+    </div>
 </div>
 <div class="item">
     <label>• Brute Attack</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoD">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoD">
+    </div>
 </div>
 <div class="item">
     <label>• Trojan</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoE">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoE">
+    </div>
 </div>
 <div class="item">
     <label>• Engenharia Social</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoF">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoF">
+    </div>
 </div>
 <div class="item">
     <label>• Phising</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoG">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoG">
+    </div>
 </div>
 <div class="item">
     <label>• Ransomware</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoH">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoH">
+    </div>
 </div>
 </div>
 
@@ -60,27 +83,39 @@
     </div>
   <div class="item">
     <label>• Dano a Reputação</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoI">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoI">
+    </div>
   </div>
   <div class="item">
     <label>• Acesso a Contas</label>
-     <input class="checkboxItem" type="checkbox" data-key="opcaoJ">
+     <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoJ">
+    </div>
   </div>
   <div class="item">
     <label>• Perda de Dados</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoK">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoK">
+    </div>
   </div>
   <div class="item">
     <label>• Indisponibilidade do Sistema</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoL">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoL">
+    </div>
   </div>
   <div class="item">
     <label>• Roubo de Identidade</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoM">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoM">
+    </div>
   </div>
   <div class="item">
     <label>• Roubo de Dados Sensíveis</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoN">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoN">
+    </div>
   </div>
 </div>
 
@@ -90,42 +125,62 @@
     </div>
   <div class="item">
     <label>• Recepção</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoO">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoO">
+    </div>
   </div>
   <div class="item">
     <label>• Setor Judiciário</label>
-     <input class="checkboxItem" type="checkbox" data-key="opcaoP">
+     <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoP">
+    </div>
   </div>
   <div class="item">
     <label>• Sala de Segurança</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoQ">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoQ">
+    </div>
   </div>
   <div class="item">
     <label>• Setor Financeiro</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoR">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoR">
+    </div>
   </div>
   <div class="item">
     <label>• Setor de R.H.</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoS">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoS">
+    </div>
   </div>
   <div class="item">
     <label>• Sala de Marketing</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoT">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoT">
+    </div>
   </div>
    <div class="item">
     <label>• Sala de Manutenção</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoU">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoU">
+    </div>
   </div>
    <div class="item">
     <label>• Data Center</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoV">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoV">
+    </div>
   </div>
     <div class="item">
     <label>• Suporte T.I.</label>
-    <input class="checkboxItem" type="checkbox" data-key="opcaoW">
+    <div class="checkbox-wrapper">
+      <input class="checkboxItem" type="checkbox" data-key="opcaoW">
+    </div>
   </div>
 </div>
 
   </div>
 </body>
+ <script src="script.js"></script>
+ <link rel="stylesheet" href="style.css">
 </html>

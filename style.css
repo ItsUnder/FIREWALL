@@ -55,7 +55,8 @@ header {
 }
 
 .headerButtons {
-    max-width: 13vh;
+    max-width: 5rem;
+    min-width: 3rem;
     margin-right: 0.9vh;
     margin-top: 0vh;
     padding: 0%;
@@ -63,15 +64,21 @@ header {
     
 .item {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     padding: 0.25rem; 
+    gap: 1rem;
 }
 
 .item label {
     margin-left: 0.25rem; 
     margin-right: 0.05rem; 
     font-size: 1.2rem; 
+    flex-shrink: 0;
+}
+
+.checked-label {
+  color: red;
 }
 
 .checkboxItem {
@@ -84,6 +91,12 @@ header {
     background: white;
     cursor: pointer;
     position: relative;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;  
 }
 
 .checkboxItem:checked {
@@ -119,4 +132,54 @@ header {
     .category h2 {
         font-size: 1rem;
     }
+    .headerButtons {
+        max-width: 4rem;
+    }
+}
+
+#menuToggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1100;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #676868;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -16rem; /* escondida inicialmente */
+  width: 16rem;
+  height: 100vh;
+  background-color: #676868;
+  color: white;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding-top: 3rem;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: rgba(255,255,255,0.2);
 }
