@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const manualOption = document.getElementById('manualOption');
   manualOption.addEventListener('click', () => {
-    alert('Modo Manual ativado');
+    window.location.href= "./pages/manual.html"
     sidebar.classList.remove('active');
   });
 

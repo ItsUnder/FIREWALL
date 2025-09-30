@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Retro";
+    src: url(../fonts/Windows\ Regular.ttf);
+}
+ 
+body {
+    font-family: 'Retro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #4b4e64;
+    color: #333;
+    font-size: 1rem; 
+}
+
+header {
+    background: #0c0b46bb;
+    color: white;
+    text-align: center;
+    padding: 0.5rem; 
+}
+
+.logoFirewall {
+    max-width: 25.5rem; 
+    min-width: 12.5rem;
+    margin: 0;
+    margin-left: -2.4vh;
+}
+
+#returnHome {
+  font-family: 'Retro', sans-serif;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1100;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #676868;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.container {
+    max-width: 50rem; 
+    margin: auto;
+    padding: 1rem;
+}
+
+.category {
+    background: #b5b2b2;
+    margin-bottom: 1.5rem; 
+    box-shadow: 0 0.125rem 0.375rem rgba(0,0,0,0.1);
+}
+
+.categoryHeader {
+    margin-top: 0;
+    background: linear-gradient(90deg,#010b82, #010b82, #0f7ecd);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.categoryTitle {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 0.60rem; 
+    font-size: 1.5rem;
+}
+
+.headerButtons {
+    max-width: 5rem;
+    min-width: 3rem;
+    margin-right: 0.9vh;
+    margin-top: 0vh;
+    padding: 0%;
+}
+
+.text {
+    padding: 0.25rem; 
+    gap: 1rem;
+}
+
+.text p {
+    text-indent: 1rem;
+    margin-left: 0.25rem; 
+    margin-right: 0.05rem; 
+    font-size: 1.2rem; 
+}
