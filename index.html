@@ -4,27 +4,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FIREWALL</title>
-  <style>
-   
-  </style>
 </head>
 <body>
-
     <button id="menuToggle">☰</button>
-<nav class="sidebar" id="sidebar">
+    <nav class="sidebar" id="sidebar">
   <ul>
     <li id="manualOption">Manual</li>
     <li id="complexOption"></li>
   </ul>
 </nav>
+    <button id="openPopupBtn" class="randomQuestion">?</button>
+     <div id="popupOverlay" class="hidden">
+    <div class="popupBox">
+      <div class="categoryHeader">
+         <h2 class="categoryTitle">Pergunta</h2> <img class="headerButtons" src="./images/Header Buttons.png"> <button id="closePopupBtn"></button>
+        </div>
+        <h2 id="questionTitle">Pergunta</h2>
+        <div class="questionOptions">
+      <form id="quizForm">
+        <label>
+          <input class="checkboxItemPopup" type="radio" name="answer" value="A">
+          <span id="optionA">Opção A</span>
+        </label><br>
+        <label>
+          <input class="checkboxItemPopup"  type="radio" name="answer" value="B">
+          <span id="optionB">Opção B</span>
+        </label><br>
+        <label>
+          <input class="checkboxItemPopup"  type="radio" name="answer" value="C">
+          <span id="optionC">Opção C</span>
+        </label><br>
+        <label>
+          <input class="checkboxItemPopup"  type="radio" name="answer" value="D">
+          <span id="optionD">Opção D</span>
+        </label>
+      </form>
+      </div>
+   
+      <button id="checkAnswerBtn">Verificar Resposta</button>
+      <br>
+      <br>
+    </div>
+  </div>
+  <div id="popupOverlay2" class="hidden">
+  <div class="popupBox">
+    <div class="categoryHeader">
+         <h2 id="categoryTitlepopup2" class="categoryTitle">Parabéns!</h2> <img class="headerButtons" src="./images/Header Buttons.png"> <button id="closePopupBtn2"></button>
+        </div>
+    <br>
+     <div id="feedback"></div>
+    <br>
+    <h2 id="phraseText"></h2> <img class="clippy" src="./images/Clippy.png">
+    <br>
+    <br>
+    <br>
+  </div>
+</div>
     <button id="clearBtn">Limpar Tudo</button>
   <header>
-    <img class="logoFirewall" src="./images/Logo Firewall.png">
+    <img class="logoFirewall" src="./images/Logo Firewall.png" onclick="dialUp()">
   </header>
   <div class="container">
     <div class="category">
         <div class="categoryHeader">
-         <h2 class="categoryTitle">Métodos de Ataque</h2> <img class="headerButtons" src="./images/Header Buttons.png">
+         <h2 class="categoryTitle">Métodos de Ataque</h2> <img class="headerButtons" src="./images/Header Buttons.png" onclick="soundError()">
         </div>
 <div class="item">
     <label>• Exploit de Zero-Day</label>
@@ -79,7 +122,7 @@
 
 <div class="category">
  <div class="categoryHeader">
-     <h2 class="categoryTitle">Consequências</h2> <img class="headerButtons" src="./images/Header Buttons.png">
+     <h2 class="categoryTitle">Consequências</h2> <img class="headerButtons" src="./images/Header Buttons.png" onclick="soundError()">
     </div>
   <div class="item">
     <label>• Dano a Reputação</label>
@@ -121,7 +164,7 @@
 
 <div class="category">
  <div class="categoryHeader">
-     <h2 class="categoryTitle">Locais</h2> <img class="headerButtons" src="./images/Header Buttons.png">
+     <h2 class="categoryTitle">Locais</h2> <img class="headerButtons" src="./images/Header Buttons.png" onclick="soundError()">
     </div>
   <div class="item">
     <label>• Recepção</label>
@@ -190,7 +233,6 @@
     </div>
   </div>
 </div>
-
   </div>
 </body>
  <script src="script.js"></script>

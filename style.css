@@ -60,6 +60,7 @@ header {
     margin-right: 0.9vh;
     margin-top: 0vh;
     padding: 0%;
+    cursor: pointer;
 }
     
 .item {
@@ -112,6 +113,32 @@ header {
     top: 0;         
 }
 
+.checkboxItemPopup {
+    appearance: none;      
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1.5em;  
+    height: 1.5em;
+    border: 0.1em solid #010b82; 
+    background: white;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.checkboxItemPopup:checked {
+    background: #ff0000;
+}
+
+.checkboxItemPopup:checked::after {
+    content: "X";
+    position: absolute;
+    color: white;
+    font-size: 1em; 
+    left: 0.2em;    
+    top: 0;         
+}
+
 #clearBtn {
   position: fixed;
   bottom: 20px;
@@ -151,11 +178,171 @@ header {
   font-weight: bold;
 }
 
-/* Sidebar */
+.randomQuestion {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 99999;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #676868;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#popupOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+   z-index: 99999;
+}
+
+#popupOverlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.popupBox {
+  background: #b5b2b2;
+  margin-bottom: 1.5rem; 
+  box-shadow: 0 0.125rem 0.375rem rgba(0,0,0,0.1);
+  width: 50rem;
+  text-align: center;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+   z-index: 100000;
+}
+
+#popupOverlay.active .popupBox {
+  transform: scale(1);
+}
+
+#closePopupBtn {
+  background: #007bff00;      
+  border: none;
+  position: absolute;      
+  top: 7px;                  
+  right: 4px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 999;     
+}
+
+#checkAnswerBtn {
+  font-family: 'Retro', sans-serif;
+  padding: 8px 15px;
+  background: #bfbfbe;
+  color: black;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 1rem;
+  border: 2px solid #000000;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+#quizForm {
+    text-align: justify;
+}
+
+.questionOptions {
+    display: flex;
+    justify-content: center; 
+    align-items: center;           
+    text-align: justify;     
+}
+
+#popupOverlay2 {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 100000;
+}
+
+#popupOverlay2.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#popupOverlay2 .popupBox {
+  background: #b5b2b2;
+  text-align: center;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+#popupOverlay2.active .popupBox {
+  transform: scale(1);
+}
+
+#closePopupBtn2 {
+  background: #007bff00;      
+  border: none;
+  position: absolute;      
+  top: 7px;                  
+  right: 4px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 999;     
+}
+
+#closePopupBtnUseless {
+  background: #007bff;      
+  position: absolute;
+  border: none;        
+  right: 21.2rem;
+  width: 4vh;
+  height: 4vh;
+  cursor: pointer;
+     
+}
+.clippy {
+    max-width: 7rem;
+}
+
+.clippyHappy {
+    max-width: 7rem;
+}
+
+label {
+  display: block;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+
 .sidebar {
   position: fixed;
   top: 0;
-  left: -16rem; /* escondida inicialmente */
+  left: -16rem;
   width: 16rem;
   height: 100vh;
   background-color: #676868;
