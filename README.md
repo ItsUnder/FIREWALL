@@ -26,6 +26,24 @@
 
 <hr>
 
+<h2>🎓 Sobre o Projeto</h2>
+<p>
+  Este projeto foi desenvolvido em meu curso técnico de T.I. com o objetivo de criar um jogo de tabuleiro educativo.
+</p>
+<p>
+  O <b>FIREWALL</b> foi criado para ensinar <b>Segurança da Informação</b> de forma simples e divertida.
+</p>
+<h3>O desenvolvimento do projeto utilizou</h3>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+  <li>Photoshop</li>
+  <li>Figma</li>
+</ul>
+
+<hr>
+
 <h2>🎯 Objetivo do Jogo</h2>
 <p>
   Descobrir as <b>três cartas secretas</b> que representam o incidente real:
@@ -192,21 +210,4 @@
   </li>
 </ul>
 
-<hr>
-
-<h2>🎓 Sobre o Projeto</h2>
-<p>
-  Este projeto foi desenvolvido em meu curso técnico de T.I. com o objetivo de criar um jogo de tabuleiro educativo.
-</p>
-<p>
-  O <b>FIREWALL</b> foi criado para ensinar <b>Segurança da Informação</b> de forma simples e divertida.
-</p>
-<h3>O desenvolvimento do projeto utilizou</h3>
-<ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>Javascript</li>
-  <li>Photoshop</li>
-  <li>Figma</li>
-</ul>
 <hr>
